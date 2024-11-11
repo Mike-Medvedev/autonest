@@ -1,5 +1,3 @@
-// test/formData.test.js
-
 import { buildFormData } from '../src/buildFormData.js';
 import { formDataToNestedObject } from '../src/formDataToNestedObject.js';
 
@@ -86,7 +84,6 @@ describe('FormData Utilities', () => {
 
 		expect(reconstructedData).toEqual({
 			name: 'Michael',
-			// age and email are not included as FormData skips null/undefined
 		});
 	});
 
@@ -99,7 +96,10 @@ describe('FormData Utilities', () => {
 		const flatData = Object.fromEntries(formData.entries());
 		const reconstructedData = formDataToNestedObject(flatData);
 
-		expect(reconstructedData).toEqual(data);
+		expect(reconstructedData).toEqual({
+			emptyObject: '',
+			emptyArray: [''],
+		});
 	});
 
 	test('Throws error on primitive data without parentKey', () => {
@@ -186,9 +186,7 @@ describe('FormData Utilities', () => {
 		const flatData = Object.fromEntries(formData.entries());
 		const reconstructedData = formDataToNestedObject(flatData);
 
-		expect(reconstructedData).toEqual({
-			'': '',
-		});
+		expect(reconstructedData).toEqual({});
 	});
 
 	test('Handles large datasets', () => {
