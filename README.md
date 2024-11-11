@@ -1,4 +1,4 @@
-# Renest
+# autonest
 
 A lightweight utility for converting deeply nested data structures to `FormData` objects and back, preserving the original structure.
 
@@ -12,7 +12,7 @@ A lightweight utility for converting deeply nested data structures to `FormData`
 ## Installation
 
 ```bash
-npm install renest
+npm install autonest
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install renest
 ### Importing the functions
 
 ```bash
-import { buildFormData, formDataToNestedObject } from 'renest';
+import { buildFormData, formDataToNestedObject } from 'autonest';
 ```
 
 ### Converting Data to FormData

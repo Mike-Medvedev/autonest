@@ -25,12 +25,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/yourusername/renest.git"
+		"url": "https://github.com/yourusername/autonest.git"
 	},
 	"bugs": {
-		"url": "https://github.com/yourusername/renest/issues"
+		"url": "https://github.com/yourusername/autonest/issues"
 	},
-	"homepage": "https://github.com/yourusername/renest#readme",
+	"homepage": "https://github.com/yourusername/autonest#readme",
 	"devDependencies": {
 		"@eslint/js": "^9.14.0",
 		"eslint": "^8.57.1",
