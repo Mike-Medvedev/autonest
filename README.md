@@ -5,7 +5,7 @@ A lightweight utility for converting deeply nested data structures to `FormData`
 ## Features
 
 - Convert any deeply nested data structure into a `FormData` object.
-- Reconstruct the original data structure from a `FormData` object.
+- Reconstruct the original nested data structure from a flat key-value object.
 - Supports arrays, objects, primitives, dates, and files (`File`/`Blob`).
 - Handles empty objects, arrays, and special characters in keys.
 
@@ -30,7 +30,7 @@ const data = {
   user: {
     name: 'Michael',
     age: 24,
-    hobbies: ['skateboarding', 'programming'],
+    hobbies: ['snowboarding', 'programming'],
     profilePicture: new File([/* file data */], 'profile.jpg', { type: 'image/jpeg' }),
     address: {
       city: 'NYC',
@@ -59,7 +59,7 @@ console.log(reconstructedData);
 //   user: {
 //     name: 'Michael',
 //     age: '24',
-//     hobbies: ['skateboarding', 'programming'],
+//     hobbies: ['snowboarding', 'programming'],
 //     profilePicture: File { ... },
 //     address: {
 //       city: 'NYC',

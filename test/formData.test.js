@@ -1,7 +1,7 @@
 // test/formData.test.js
 
-import { buildFormData } from '../buildFormData.js';
-import { formDataToNestedObject } from '../formDataToNestedObject.js';
+import { buildFormData } from '../src/buildFormData.js';
+import { formDataToNestedObject } from '../src/formDataToNestedObject.js';
 
 describe('FormData Utilities', () => {
 	test('Handles simple key-value pairs', () => {
